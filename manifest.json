@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Plugin.Scraper",
+    "description": "It does stuff",
+    "version": "1",
+  
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["inject.js"],
+          "run_at": "document_end"
+        }
+      ],
+    "web_accessible_resources": [
+      "xpathGen.js"
+      ]
+  }
